@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Practice Programs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .program-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .btn {
+            padding: 15px 25px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .btn:hover {
+            transform: scale(1.05);
+        }
+        .btn-1 { background-color: #2e7d32; color: white; }
+        .btn-2 { background-color: #1565c0; color: white; }
+        .btn-3 { background-color: #1a237e; color: white; }
+        .btn-4 { background-color: #e65100; color: white; }
+        .btn-5 { background-color: #6a1b9a; color: white; }
+        
+        #output {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #fafafa;
+            border-radius: 5px;
+            min-height: 100px;
+            display: none;
+        }
+        #output.show {
+            display: block;
+        }
+        
+        .result-box {
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        .success { background-color: #e8f5e9; }
+        .error { background-color: #ffebee; }
+        .info { background-color: #e3f2fd; }
+        .warning { background-color: #fff3e0; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📚 JavaScript Practice Programs</h1>
+        
+        <div class="program-buttons">
+            <button class="btn btn-1" onclick="runProgram(1)">1. Grocery Bill Calculator</button>
+            <button class="btn btn-2" onclick="runProgram(2)">2. Student Result System</button>
+            <button class="btn btn-3" onclick="runProgram(3)">3. ATM Withdrawal System</button>
+            <button class="btn btn-4" onclick="runProgram(4)">4. Restaurant Order System</button>
+            <button class="btn btn-5" onclick="runProgram(5)">5. Employee Salary Calculator</button>
+        </div>
+        
+        <div id="output"></div>
+        
+        <div style="margin-top: 20px; padding: 15px; background-color: #e8f5e9; border-radius: 5px;">
+            <h3>💻 Console Output:</h3>
+            <pre id="console-output" style="background-color: #1e1e1e; color: #0f0; padding: 15px; border-radius: 5px; overflow-x: auto;"></pre>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
